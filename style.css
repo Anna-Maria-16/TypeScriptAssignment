@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 h1, h2, h3 {
 	font-family: 'Satisfy';
@@ -7,7 +8,7 @@ h1, h2, h3 {
 }
 
 body {
-font-family: 'Satisfy';
+font-family: 'Lora';
 font-size: 18px;
 margin: 20px;
 background: #d1c2c2;

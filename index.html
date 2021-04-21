@@ -14,6 +14,7 @@
       <h2>Wähle ein Rezept aus:</h2>
 
 <!--Flip-Karten-->
+<div class="flip-karten">
       <!--Flip-Karte Brownies-->
       <div class="flip-karte-brownies">
           <div class="flip-karte-b">
@@ -64,16 +65,19 @@
               </div>
           </div>
       </div>
-    
+</div>    
+
+
 <!--Rezept-Container-->
         <!--Brownie-Rezept-Container-->
         <div id= "BrezeptBox" class="RezeptContainer">
             <div class="RezeptContent">
                 <span class="close" onclick="closeContainerB()">&times;</span>
                     <h2>American Brownies</h2>
-                <div class="Seite1">
+                
+                <div class="Seite-1">
                     <p>Zutaten:</p>
-                    <ul id="ZutatenB">
+                    <ul id="Zutaten-B">
                     <li>6 Eier (Gr. M)</li>
                     <li>120g weißer Zucker</li>
                     <li>120g brauner Zucker</li>
@@ -87,15 +91,28 @@
                     </ul>
                 </div>
                 
-                    <br>
-                    <ol>
+                <ol>
+                <div class="Schritt">
                         <li>Backofen auf 175 Grad Ober- und Unterhitze vorheizen. Ein kleines Blech oder eine rechteckige Backform (ca. 25*35 cm) mit Backpapier belegen.</li>
+                </div>
+                <div class="Schritt">
                         <li>Klein gehackte Schokolade und Butter zusammen in einem Topf im heißen Wasserbad schmelzen lassen. Leicht abkühlen lassen. Das Öl zur Schoko-Butter-Masse geben. Die Eier mit dem weißen und braunen Zucker sehr schaumig schlagen.</li>
-                        <li>Mehl mit Backpulver und Kakao mischen. Die Schoko-Butter-Masse und die trockenen Zutaten kurz, aber kräftig, unter die Eiercreme rühren. Die klein gehackte Schokolade ebenfalls dazugeben; ein paar Chunks für die Deko aufheben. Den Brownieteig in die vorbereitete Form füllen und glattstreichen. Restliche gehackte Schokolade darüber verteilen.</li>
-                        <li>Brownies ganz grob 20-25 Minuten backen – die Backzeit hängt von eurem Ofen ab. Nicht zu lange im Ofen lassen! Der Teig sollte noch etwas weich sein, aber natürlich im Inneren nicht mehr hin- und her wackeln. Die Brownies werden beim Abkühlen noch etwas fester.</li>
-                    </ol>
+                </div>
+                <div class="Schritt">
+                    <li>Mehl mit Backpulver und Kakao mischen. Die Schoko-Butter-Masse und die trockenen Zutaten kurz, aber kräftig, unter die Eiercreme rühren. Die klein gehackte Schokolade ebenfalls dazugeben; ein paar Chunks für die Deko aufheben. Den Brownieteig in die vorbereitete Form füllen und glattstreichen. Restliche gehackte Schokolade darüber verteilen.</li>
+                </div>
+                <div class="Schritt">
+                    <li>Brownies ganz grob 20-25 Minuten backen – die Backzeit hängt von eurem Ofen ab. Nicht zu lange im Ofen lassen! Der Teig sollte noch etwas weich sein, aber natürlich im Inneren nicht mehr hin- und her wackeln. Die Brownies werden beim Abkühlen noch etwas fester.</li>
+                </div>
+                </ol>
+            
+                
+                <!-- Weiter/Zurück -->
+                <a class="zurück" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="weiter" onclick="plusSlides(1)">&#10095;</a>
+
             </div>
-            </div>
+        </div>
 
 
         <!--Russicher-Zupfkuchen-Rezept-Container-->

@@ -138,7 +138,15 @@ background: #d1c2c2;
 	-webkit-transform: rotateY(180deg);
   }
 
-   /*Rezept-Container*/
+/*Flip-Karten positionieren*/
+.flip-karten{
+	display: flex;
+	margin-top: 100px;
+	justify-content: space-around;
+}
+
+
+/*Rezept-Container*/
 
  /* The Modal (background) */
  .RezeptContainer {

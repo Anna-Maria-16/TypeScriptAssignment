@@ -4,13 +4,69 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Rezepte</title>
 </head>
 
 <body>
-    <my-beispiel></my-beispiel>
+      <!--Überschrift--> 
+      <h1>Anna-Marias einfache Rezepte</h1>
+      <h2>Wähle ein Rezept aus:</h2>
+
+<!--Flip-Karten-->
+      <!--Flip-Karte Brownies-->
+      <div class="flip-karte-brownies">
+          <div class="flip-karte-b">
+              <div class="flip-karte-vorderseite-b">
+                  <img class= "flipcard-imgs" src="Brownie2.jpg" alt="American Brownies">
+              </div>
+              <div class="flip-karte-rückseite-b">
+                  <h2>American Brownies</h2>
+                  <p>Arbeitszeit: 15 Min.</p>
+                  <p>Backzeit: 20 Min.</p>
+                  <p>Niveau: einfach</p>
+                  <button onclick='openContainerB()'>Jetztz backen</button>
+              </div>
+          </div>
+      </div>
+  
+  
+      <!--Flip-Karte Russischer Zupfkuchen-->
+      <div class="flip-karte-russischer-zupfkuchen">
+          <div class="flip-karte-rz">
+              <div class="flip-karte-vorderseite-rz">
+                  <img class= "flipcard-imgs" src="russischer-zupfkuchen2.jpg" alt="Russischer Zupfkuchen">
+              </div>
+              <div class="flip-karte-rückseite-rz">
+                  <h2>Russicher Zupfkuchen</h2>
+                  <p>Arbeitszeit: 20 Min. </p>
+                  <p>Backzeit: 60 Min.</p>
+                  <p>Niveau: einfach</p>
+                  <button onclick='openContainerRZ()'>Jetztz backen</button>
+              </div>
+          </div>
+      </div>
+  
+  
+      <!--Flip-Karte Erdbeerkuchen-->
+      <div class="flip-karte-erdbeerkuchen">
+          <div class="flip-karte-ek">
+              <div class="flip-karte-vorderseite-ek">
+                  <img class= "flipcard-imgs" src="Erdbeerkuchen2.jpg" alt="Erdbeerkuchen">
+              </div>
+              <div class="flip-karte-rückseite-ek">
+                  <h2>Erdbeerkuchen</h2>
+                  <p>Arbeitszeit: 40 Min.</p>
+                  <p>Ruhezeit: ca. 1 Stunde</p>
+                  <p>Backzeit: 25 Min.</p>
+                  <p>Niveau: einfach</p>
+                  <button onclick='openContainerEK()'>Jetztz backen</button>
+              </div>
+          </div>
+      </div>
+    
+  
+ 
     <script defer src="./build/bundle.js"></script>
-    <input type="text" id="myInput" />
 </body>
 
 </html>

@@ -9,7 +9,7 @@ h1, h2, h3 {
 
 body {
 font-family: 'Lora';
-font-size: 18px;
+font-size: 19px;
 margin: 20px;
 background: #d1c2c2;
 }
@@ -146,6 +146,16 @@ background: #d1c2c2;
 	justify-content: space-around;
 }
 
+.jetzt-backen-btn{
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    border-style: none;
+    background-color:rgba(161, 133, 133, 0.8);
+    color: #fefefe;
+    font-weight:680;
+    font-size: 18px;
+}
 
 /*Rezept-Container*/
 
@@ -154,14 +164,13 @@ background: #d1c2c2;
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
 	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
+	padding-top: 50px; /* Location of the box */
 	left: 0;
 	top: 0;
 	width: 100%; /* Full width */
 	height: 100%; /* Full height */
 	overflow: scroll; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
   }
   
   /* Modal Content */
@@ -171,39 +180,47 @@ background: #d1c2c2;
 	margin: auto;
 	padding: 20px;
 	border: 1px solid #888;
-	width: 80%;
+    border-radius: 20px;
+	width: 65%;
+    height: 82%;
   }
   
   /* The Close Button */
   .close {
-	color: #aaaaaa;
+	color:rgb(185, 181, 181);
 	float: right;
-	font-size: 32px;
+    margin-right: 15px;
+	font-size: 45px;
 	font-weight: bold;
   }
   
   .close:hover, .close:focus {
-	color: #000;
+	color:  rgba(161, 133, 133, 0.8);
 	text-decoration: none;
 	cursor: pointer;
   }
 
 
-  /*weiter/zurück buttons*/
+  /*weiter&zurück buttons*/
   .weiter, .zurueck{
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
+    padding: 18px;
     margin-top: -50px;
-    color: rgb(92, 60, 60);
-    font-weight: bold;
-    font-size: 20px;
+    color: rgb(185, 181, 181);
+    font-weight: 500;
+    font-size: 35px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+  }
+
+  .zurueck{
+    left:0;
+    border-radius: 0px 3px 3px 0px;
   }
 
   /*weiter rechts positionieren*/
@@ -215,5 +232,9 @@ background: #d1c2c2;
   /* button färbt sich bei hovern */
 .zurueck:hover,
 .weiter:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(161, 133, 133, 0.8);
+}
+
+#Zutaten-B{
+    padding-left: 80px;
 }

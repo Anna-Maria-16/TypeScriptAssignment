@@ -187,16 +187,20 @@ background: #d1c2c2;
   
   /* The Close Button */
   .close {
+    cursor: pointer;
 	color:rgb(185, 181, 181);
 	float: right;
-    margin-right: 15px;
-	font-size: 45px;
-	font-weight: bold;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 20px;
+	font-size: 50px;
+	font-weight: 850;
   }
   
   .close:hover, .close:focus {
-	color:  rgba(161, 133, 133, 0.8);
-	text-decoration: none;
+	color: rgba(161, 133, 133, 0.8);
+    margin-top: 25x;
+ 	text-decoration: none;
 	cursor: pointer;
   }
 
@@ -233,6 +237,7 @@ background: #d1c2c2;
 .zurueck:hover,
 .weiter:hover {
   background-color: rgba(161, 133, 133, 0.8);
+  color: #fefefe;
 }
 
 #Zutaten-B{

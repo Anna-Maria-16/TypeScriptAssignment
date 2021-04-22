@@ -11,7 +11,7 @@ body {
 font-family: 'Lora';
 font-size: 19px;
 margin: 20px;
-background: #d1c2c2;
+background: #dac8c8;
 }
 
 
@@ -151,8 +151,8 @@ background: #d1c2c2;
     width: 150px;
     border-radius: 5px;
     border-style: none;
-    background-color:rgba(161, 133, 133, 0.8);
-    color: #fefefe;
+    background-color:rgba(226, 198, 198, 0.8);
+    color: rgb(255, 255, 255);
     font-weight:680;
     font-size: 18px;
 }
@@ -184,7 +184,28 @@ background: #d1c2c2;
 	width: 65%;
     height: 82%;
   }
+
+  #zutaten{
+	  margin-left: 100px;
+	  padding-top: 40px;
+  }
   
+  #Zutaten-B{
+	position:center;
+	padding-left: 270px;
+ }
+
+ .Schritt li{
+	cursor: pointer;
+	list-style: none;
+	text-decoration: none;
+ }
+
+ .Schritt .checked{
+	 text-decoration: line-through;
+ }
+
+
   /* The Close Button */
   .close {
     cursor: pointer;
@@ -240,6 +261,3 @@ background: #d1c2c2;
   color: #fefefe;
 }
 
-#Zutaten-B{
-    padding-left: 80px;
-}

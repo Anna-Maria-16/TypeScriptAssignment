@@ -1,24 +1,80 @@
-//THIS IS THE ENTRY FILE - WRITE YOUR MAIN LOGIC HERE!
+//Brownie-Rezept
+//Container
+let openB= document.getElementById('BrezeptBox') as HTMLElement;
 
-import { helloWorld, Beispiel } from "./myModule";
-import { alertMe } from "./myOtherModule";
+function openContainerB(){
+  openB.style.display = 'block';
+}
 
-console.log(helloWorld);
-customElements.define("my-beispiel", Beispiel);
+function closeContainerB(){
+  openB.style.display ='none';
+}
 
-alertMe();
 
-const myInputValue = document.querySelector<HTMLInputElement>("#myInput");
+//nächster Back-Schritt
+let index:number = 1;
+    schritt(index);
 
-const myInputValueAlternate = document.querySelector(
-  "#myInput"
-) as HTMLInputElement;
+function nächsterSchritt(n:number){
+  schritt(index +=n);
+}
 
-document
-  .querySelector<HTMLInputElement>("#myInput")
-  ?.addEventListener("focus", doSmth);
+function schritt(n:number){
+  let i:any;
+  let schritte:any = document.getElementsByClassName('Schritt');
 
-function doSmth(e: UIEvent) {
-  const val = e.target as HTMLInputElement;
-  console.log(e, val.value);
+  if(n>schritte.length) {
+      index=1;
+  }
+
+  if(n<1) {
+      index = schritte.length;
+  }
+
+  for(i=0; i<schritte.length; i++) {
+      schritte[i].style.display= 'none';
+  }
+
+schritte[index -1].style.display='block'
+}
+
+
+//zutaten durchstreichen
+let list = document.getElementById('zutaten-1') as HTMLElement;
+list.addEventListener('click', check);
+
+function check(e:any) {
+  if(e.target.tagName === 'LI') {
+    e.target.classList.toggle('checked');
+  }
+} false;
+
+
+
+
+//Russischer-Zupfkuchen-Rezept
+//Container
+
+let rzBox= document.getElementById('RZrezeptBox') as HTMLElement;
+
+function openContainerRZ(){
+  rzBox.style.display = 'block';
+}
+
+function closeContainerRZ(){
+  rzBox.style.display ='none';
+}
+
+
+
+//Erdbeerkuchen-Rezept
+//Container
+let ekBox= document.getElementById('EKrezeptBox') as HTMLElement;
+
+function openContainerEK(){
+  ekBox.style.display = 'block';
+}
+
+function closeContainerEK(){
+  ekBox.style.display ='none';
 }

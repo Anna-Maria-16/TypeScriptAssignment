@@ -187,13 +187,31 @@ background: #dac8c8;
 
   #zutaten{
 	  margin-left: 100px;
-	  padding-top: 40px;
+	  margin-top: 0px;
+	  padding-top: 0px;
+  }
+
+  #zutaten-2{
+	  margin-top: 0px;
+	margin-left: -170px;
+	padding-left: 0px;
   }
   
   #Zutaten-B{
 	position:center;
 	padding-left: 270px;
  }
+ 
+ #Zutaten-RZ{
+	position:center;
+	padding-left: 270px;
+ }
+
+ #Zutaten-EK{
+	position:center;
+	padding-left: 270px;
+ }
+
 
  .Schritt li{
 	cursor: pointer;

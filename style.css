@@ -172,6 +172,12 @@ background: #dac8c8;
 	overflow: scroll; /* Enable scroll if needed */
 	background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
   }
+
+  .RezeptContainer p{
+	  width: 800px;
+	  margin: 0 auto;
+	  margin-top: 150px;
+  }
   
   /* Modal Content */
   .RezeptContent {

@@ -222,7 +222,17 @@ background: #dac8c8;
  .Schritt .checked{
 	 text-decoration: line-through;
  }
+ 
+/*Backschritte russischer Zupfkuchen*/
+ .Schritt-RZ li{
+	cursor: pointer;
+	list-style: none;
+	text-decoration: none;
+ }
 
+ .Schritt-RZ .checked{
+	 text-decoration: line-through;
+ }
 
   /* The Close Button */
   .close {

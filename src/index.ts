@@ -1,6 +1,6 @@
 //Brownie-Rezept
 //Container
-let openB= document.getElementById('BrezeptBox') as HTMLElement;
+let openB= document.getElementById('BrezeptBox') as HTMLDivElement;
 
 function openContainerB(){
   openB.style.display = 'block';
@@ -21,7 +21,7 @@ function nächsterSchritt(n:number){
 
 function schritt(n:number){
   let i:any;
-  let schritte:any = document.getElementsByClassName('Schritt');
+  let schritte = document.getElementsByClassName('Schritt') as any;
 
   if(n>schritte.length) {
       index=1;
@@ -55,7 +55,7 @@ function check(e:any) {
 //Russischer-Zupfkuchen-Rezept
 //Container
 
-let rzBox= document.getElementById('RZrezeptBox') as HTMLElement;
+let rzBox= document.getElementById('RZrezeptBox') as HTMLDivElement;
 
 function openContainerRZ(){
   rzBox.style.display = 'block';
@@ -69,7 +69,7 @@ function closeContainerRZ(){
 
 //Erdbeerkuchen-Rezept
 //Container
-let ekBox= document.getElementById('EKrezeptBox') as HTMLElement;
+let ekBox= document.getElementById('EKrezeptBox') as HTMLDivElement;
 
 function openContainerEK(){
   ekBox.style.display = 'block';

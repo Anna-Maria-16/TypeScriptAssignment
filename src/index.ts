@@ -1,80 +1,57 @@
-//Brownie-Rezept
-//Container
-let openB= document.getElementById('BrezeptBox') as HTMLDivElement;
-
-function openContainerB(){
-  openB.style.display = 'block';
-}
-
-function closeContainerB(){
-  openB.style.display ='none';
-}
-
-
-//nächster Back-Schritt
-let index:number = 1;
-    schritt(index);
-
-function nächsterSchritt(n:number){
-  schritt(index +=n);
-}
-
-function schritt(n:number){
-  let i:any;
-  let schritte = document.getElementsByClassName('Schritt') as any;
-
-  if(n>schritte.length) {
-      index=1;
+//Brownie Modal 
+//öffnen
+const brownieButton=document.getElementById('bButton') as HTMLElement;
+brownieButton.addEventListener('click', openBrownieBox);
+  
+function openBrownieBox(){
+    const modalBrownie=document.getElementById('bRezeptBox') as HTMLElement;
+    modalBrownie.style.display='block';
   }
 
-  if(n<1) {
-      index = schritte.length;
-  }
+//schließen
+ const closeButtonB = document.getElementById('closeBModal') as HTMLElement;
+ closeButtonB.addEventListener('click', closeBrownieModal);
 
-  for(i=0; i<schritte.length; i++) {
-      schritte[i].style.display= 'none';
-  }
+ function closeBrownieModal(){
+  const modalBrownie=document.getElementById('bRezeptBox') as HTMLElement;
+  modalBrownie.style.display='none';
+ }
 
-schritte[index -1].style.display='block'
+
+//russischer Zupfkuchen Modal 
+//öffnen
+const zupfkuchenButton = document.getElementById('rzButton') as HTMLElement;
+zupfkuchenButton.addEventListener('click', openZupfkuchenBox);
+
+function openZupfkuchenBox(){
+  const modalZupfkuchen = document.getElementById('RzRezeptBox') as HTMLElement;
+  modalZupfkuchen.style.display='block';
+}
+
+//schließen
+const closeButtonRz = document.getElementById('closeRzModal') as HTMLElement;
+closeButtonRz.addEventListener('click', closeRzModal);
+
+function closeRzModal(){
+ const modalRz=document.getElementById('RzRezeptBox') as HTMLElement;
+ modalRz.style.display='none';
 }
 
 
-//zutaten durchstreichen
-let list = document.getElementById('zutaten-1') as HTMLElement;
-list.addEventListener('click', check);
+//Erdbeerkuchen Modal öffnen
+const erdbeerkuchenButton = document.getElementById('ekButton') as HTMLElement;
+erdbeerkuchenButton.addEventListener('click', openErdbeerkuchenBox);
 
-function check(e:any) {
-  if(e.target.tagName === 'LI') {
-    e.target.classList.toggle('checked');
-  }
-} false;
-
-
-
-
-//Russischer-Zupfkuchen-Rezept
-//Container
-
-let rzBox= document.getElementById('RZrezeptBox') as HTMLDivElement;
-
-function openContainerRZ(){
-  rzBox.style.display = 'block';
+function openErdbeerkuchenBox(){
+  const modalErdbeerkuchen = document.getElementById('EkRezeptBox') as HTMLElement;
+  modalErdbeerkuchen.style.display='block';
 }
 
-function closeContainerRZ(){
-  rzBox.style.display ='none';
-}
+//schließen
+const closeButtonEk = document.getElementById('closeEkModal') as HTMLElement;
+closeButtonEk.addEventListener('click', closeEkModal);
 
-
-
-//Erdbeerkuchen-Rezept
-//Container
-let ekBox= document.getElementById('EKrezeptBox') as HTMLDivElement;
-
-function openContainerEK(){
-  ekBox.style.display = 'block';
-}
-
-function closeContainerEK(){
-  ekBox.style.display ='none';
+function closeEkModal(){
+ const modalEk=document.getElementById('EkRezeptBox') as HTMLElement;
+ modalEk.style.display='none';
 }

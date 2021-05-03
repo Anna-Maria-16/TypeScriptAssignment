@@ -14,7 +14,11 @@ margin: 20px;
 background: #dac8c8;
 }
 
-
+.titelQuestion{
+	font-family: 'Lora';
+	font-size: 28px;
+	font-weight: 590;
+}
 
 /*Flip-Karte-Brownies*/
 
@@ -40,7 +44,7 @@ background: #dac8c8;
  }
 
   .flip-karte-brownies:hover .flip-karte-b{
-	transform: rotateY(180deg);
+	transform: rotateY(-180deg);
   }
 
   .flip-karte-vorderseite-b, .flip-karte-rückseite-b {
@@ -79,7 +83,7 @@ background: #dac8c8;
 
 
   .flip-karte-russischer-zupfkuchen:hover .flip-karte-rz{
-	transform: rotateY(180deg);
+	transform: rotateY(-180deg);
   }
 
   .flip-karte-vorderseite-rz, .flip-karte-rückseite-rz {
@@ -121,7 +125,7 @@ background: #dac8c8;
 
 
   .flip-karte-erdbeerkuchen:hover .flip-karte-ek{
-	transform: rotateY(180deg);
+	transform: rotateY(-180deg);
   }
 
   .flip-karte-vorderseite-ek, .flip-karte-rückseite-ek {
@@ -146,7 +150,8 @@ background: #dac8c8;
 	justify-content: space-around;
 }
 
-.jetzt-backen-btn{
+.jetztBackenBtn{
+	cursor: pointer;
     height: 45px;
     width: 150px;
     border-radius: 5px;
@@ -198,7 +203,7 @@ background: #dac8c8;
   }
 
   #zutaten-2{
-	  margin-top: 0px;
+	margin-top: 0px;
 	margin-left: -170px;
 	padding-left: 0px;
   }
@@ -228,7 +233,8 @@ background: #dac8c8;
  .Schritt .checked{
 	 text-decoration: line-through;
  }
- 
+
+
 /*Backschritte russischer Zupfkuchen*/
  .Schritt-RZ li{
 	cursor: pointer;

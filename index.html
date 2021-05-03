@@ -10,8 +10,8 @@
 
 <body>
       <!--Überschrift--> 
-      <h1>Einfache Rezepte</h1>
-      <h2>Wähle ein Rezept aus:</h2>
+      <h1>Annas einfache Schritt-für-Schritt Rezepte</h1>
+      <h2 class="titelQuestion">Auf was hast du heute Lust?</h2>
 
 <!--Flip-Karten-->
 <div class="flip-karten">
@@ -25,7 +25,7 @@
                   <h2>American Brownies</h2>
                   <p>Arbeitszeit: 15 Min.</p>
                   <p>Backzeit: 20 Min.</p>
-                  <button class="jetzt-backen-btn" onclick='openContainerB()'>Jetzt backen</button>
+                  <button id="bButton" class="jetztBackenBtn">Jetzt backen</button>
               </div>
           </div>
       </div>
@@ -41,7 +41,7 @@
                   <h2>Russicher Zupfkuchen</h2>
                   <p>Arbeitszeit: 20 Min. </p>
                   <p>Backzeit: 60 Min.</p>
-                  <button class="jetzt-backen-btn" onclick='openContainerRZ()'>Jetzt backen</button>
+                  <button id="rzButton" class="jetztBackenBtn">Jetzt backen</button>
               </div>
           </div>
       </div>
@@ -58,7 +58,7 @@
                   <p>Arbeitszeit: 40 Min.</p>
                   <p>Ruhezeit: ca. 1 Stunde</p>
                   <p>Backzeit: 25 Min.</p>
-                  <button class="jetzt-backen-btn" onclick='openContainerEK()'>Jetzt backen</button>
+                  <button id='ekButton' class="jetztBackenBtn">Jetzt backen</button>
               </div>
           </div>
       </div>
@@ -67,26 +67,26 @@
 
 <!--Rezept-Container-->
     <!--Brownie-Rezept-Container-->
-        <div id= "BrezeptBox" class="RezeptContainer">
-            <div class="RezeptContent">
-                <span class="close" onclick="closeContainerB()">&times;</span>
+        <div id= "bRezeptBox" class="RezeptContainer">
+            <div id="brownieContent" class="RezeptContent">
+                <span id="closeBModal"class="close">&times;</span>
                     <h1>American Brownies</h1>
                 
                 <div class="Schritt">
                     <p id="zutaten">Du brauchst dafür:</p>
                     <ul id="Zutaten-B">
-                    <li>6 Eier (Gr. M)</li>
-                    <li>120g weißer Zucker</li>
-                    <li>120g brauner Zucker</li>
-                    <li>120g Zartbitterschokolade klein gehackt</li>
-                    <li>250g Butter</li>
-                    <li>4 EL Sonnenblumenöl</li>
-                    <li>140g Weizenmehl</li>
-                    <li>1 TL Backpulver</li>
-                    <li>100g Backkakao</li>
-                    <li>80g Zartbitterschokolade klein gehackt zum Unterheben</li>
+                       <!-- <li>6 Eier (Gr. M)</li>
+                        <li>120g weißer Zucker</li>
+                        <li>120g brauner Zucker</li>
+                        <li>120g Zartbitterschokolade klein gehackt</li>
+                        <li>250g Butter</li>
+                        <li>4 EL Sonnenblumenöl</li>
+                        <li>140g Weizenmehl</li>
+                        <li>1 TL Backpulver</li>
+                        <li>100g Backkakao</li>
+                        <li>80g Zartbitterschokolade klein gehackt zum Unterheben</li>
                     <br>
-                    <li>Backform (ca. 25x35 cm)</li>
+                        <li>Backform (ca. 25x35 cm)</li>-->
                     </ul>
                 </div>
                 <div class="Schritt">
@@ -95,18 +95,18 @@
                     <p>Zuerst den Backofen auf <b>175 Grad Ober- und Unterhitze</b> vorheizen.<br>Ein kleines Blech oder eine rechteckige Backform mit Backpapier belegen.</p>
                 </div>
                 <div class="Schritt">
-                    <ul id="zutaten-1">
-                    <li>120g Zartbitterschokolade klein gehackt</li>
-                    <li>250g Butter</li>
-                    <li>4 EL Sonnenblumenöl</li>
+                    <ul class="zutatenListe">
+                        <li>120g Zartbitterschokolade klein gehackt</li>
+                        <li>250g Butter</li>
+                        <li>4 EL Sonnenblumenöl</li>
                     </ul>
                     <p>Die klein gehackte Schokolade und Butter zusammen in einem Topf im heißen Wasserbad schmelzen.<br>Danach leicht abkühlen lassen. Das Öl zur Schoko-Butter-Masse geben. </p>
                 </div>
                 <div class="Schritt">
-                    <ul class="zutaten-liste">
-                    <li>6 Eier (Gr. M)</li>
-                    <li>120g weißer Zucker</li>
-                    <li>120g brauner Zucker</li>
+                    <ul class="zutatenListe">
+                        <li>6 Eier (Gr. M)</li>
+                        <li>120g weißer Zucker</li>
+                        <li>120g brauner Zucker</li>
                     </ul>
                     <p>Nun die Eier mit dem weißen und braunen Zucker sehr schaumig schlagen.</p>
                 </div>
@@ -134,9 +134,9 @@
 
 
     <!--Russicher-Zupfkuchen-Rezept-Container-->
-        <div id= "RZrezeptBox" class="RezeptContainer">
+        <div id= "RzRezeptBox" class="RezeptContainer">
             <div class="RezeptContent">
-                <span class="close" onclick="closeContainerRZ()">&times;</span>
+                <span id="closeRzModal" class="close">&times;</span>
                     <h2>Russischer Zupfkuchen</h2>
 
                     <div class="Schritt-RZ">
@@ -210,9 +210,9 @@
 
 
     <!--Erbeerkuchen-Rezept-Container-->
-        <div id= "EKrezeptBox" class="RezeptContainer">
+        <div id= "EkRezeptBox" class="RezeptContainer">
             <div class="RezeptContent">
-                <span class="close" onclick="closeContainerEK()">&times;</span>
+                <span id="closeEkModal" class="close">&times;</span>
                     <h2>Erdbeerkuchen</h2>
                     
                     <div class="Schritt-EK">

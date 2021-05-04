@@ -75,7 +75,7 @@
                 <div class="Schritt">
                     <p id="zutaten">Du brauchst dafür:</p>
                     <ul id="Zutaten-B">
-                       <!-- <li>6 Eier (Gr. M)</li>
+                       <li>6 Eier (Gr. M)</li>
                         <li>120g weißer Zucker</li>
                         <li>120g brauner Zucker</li>
                         <li>120g Zartbitterschokolade klein gehackt</li>
@@ -86,12 +86,13 @@
                         <li>100g Backkakao</li>
                         <li>80g Zartbitterschokolade klein gehackt zum Unterheben</li>
                     <br>
-                        <li>Backform (ca. 25x35 cm)</li>-->
+                        <li>Backform (ca. 25x35 cm)</li>
                     </ul>
                 </div>
                 <div class="Schritt">
-                    <input type="checkbox" id="first" name="first">
-                    <label for="first">Backform (ca. 25x35 cm)</label>
+                    <ul class="zutatenListe">
+                        <li>Backform (ca. 25x35 cm)</li>
+                    </ul>
                     <p>Zuerst den Backofen auf <b>175 Grad Ober- und Unterhitze</b> vorheizen.<br>Ein kleines Blech oder eine rechteckige Backform mit Backpapier belegen.</p>
                 </div>
                 <div class="Schritt">
@@ -123,11 +124,10 @@
                     <p>Den Brownieteig in die vorbereitete Form füllen und glattstreichen. Restliche gehackte Schokolade darüber verteilen.<br>Die Brownies ca. 20-25 Minuten backen – die Backzeit hängt von eurem Ofen ab. Nicht zu lange im Ofen lassen! Der Teig sollte noch etwas weich sein, aber natürlich im Inneren nicht mehr hin- und her wackeln. (Die Brownies werden beim Abkühlen noch etwas fester)</p>
                 </div>
                 
-            
                 
                 <!-- Weiter/Zurück Buttons -->
-                <a class="zurueck" onclick="nächsterSchritt(-1)">&#10094;</a>
-                <a class="weiter" onclick="nächsterSchritt(1)">&#10095;</a>
+                <a id="nextBrownie" class="zurueck">&#10094;</a>
+                <a id="previousBrownie" class="weiter">&#10095;</a>
 
             </div>
         </div>
@@ -181,7 +181,7 @@
                         <p>Für den Teig alle Zutaten zu einem homogenen Teig verkneten.</p>
                     </div>  
                     <div class="Schritt-RZ">
-                    <p>Die Hälfte des Teigs in die Springform drücken, dabei einen Rand von etwa 3 cm bilden. Den restlichen Teig bei Seite legen. Um den Rand gleichmäßiger zu gestalten, einfach mit einem Messer am Rand entlangfahren und überschüssigen oder ungleichmäßigen Teig abschneiden.</p>  
+                        <p>Die Hälfte des Teigs in die Springform drücken, dabei einen Rand von etwa 3 cm bilden. Den restlichen Teig bei Seite legen. Um den Rand gleichmäßiger zu gestalten, einfach mit einem Messer am Rand entlangfahren und überschüssigen oder ungleichmäßigen Teig abschneiden.</p>  
                     </div>
                     <div class="Schritt-RZ">
                         <ul class="zutaten-liste"></ul>
@@ -192,7 +192,7 @@
                             <li>1 Pck. Vanillezucker</li>
                             <li>1 Pck. Vanillepuddingpulver</li>
                         </ul>
-                            <p>Eier mit dem Zucker und der Butter verquirlen.<br>Magerquark, Vanillezucker und Vanillepuddingpulver hinzugeben und gut durchrühren.<br>Masse auf den Teig geben. </p>
+                        <p>Eier mit dem Zucker und der Butter verquirlen.<br>Magerquark, Vanillezucker und Vanillepuddingpulver hinzugeben und gut durchrühren.<br>Masse auf den Teig geben. </p>
                     </div>
                     <div class="Schritt-RZ">    
                         <p>Die beiseite gelegte Hälfte des Teigs in kleine Stücke reißen und diese mit kleinen Lücken vorsichtig auf die Füllung legen.</p> 
@@ -202,8 +202,8 @@
                     </div>
             
              <!-- Weiter/Zurück Buttons-->
-             <a class="zurueck" onclick="nächsterSchrittRZ(-1)">&#10094;</a>
-             <a class="weiter" onclick="nächsterSchrittRZ(1)">&#10095;</a>
+             <a class="zurueck">&#10094;</a>
+             <a class="weiter">&#10095;</a>
 
             </div>
         </div>
@@ -270,13 +270,13 @@
                         <ul class="zutaten-liste">
                         <li>1 Pck. Tortenguss, rot</li>
                         </ul>
-                    <p>Den Tortenguss nach Packungsanweisung mit dem Wasser anrühren, kochen und anschließend über den Erdbeeren verteilen. Fest werden lassen und dann ist der Kuchen servierfertig.</p>
+                        <p>Den Tortenguss nach Packungsanweisung mit dem Wasser anrühren, kochen und anschließend über den Erdbeeren verteilen. Fest werden lassen und dann ist der Kuchen servierfertig.</p>
                     </div>
            
 
              <!-- Weiter/Zurück Buttons-->
-             <a class="zurueck" onclick="nächsterSchrittEK(-1)">&#10094;</a>
-             <a class="weiter" onclick="nächsterSchrittEK(1)">&#10095;</a>
+             <a class="zurueck">&#10094;</a>
+             <a class="weiter">&#10095;</a>
 
             </div>
         </div>

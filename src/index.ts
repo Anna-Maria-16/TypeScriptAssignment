@@ -3,19 +3,29 @@
 const brownieButton=document.getElementById('bButton') as HTMLElement;
 brownieButton.addEventListener('click', openBrownieBox);
   
-function openBrownieBox(){
-    const modalBrownie=document.getElementById('bRezeptBox') as HTMLElement;
-    modalBrownie.style.display='block';
-  }
+    function openBrownieBox(){
+      const modalBrownie=document.getElementById('bRezeptBox') as HTMLElement;
+      modalBrownie.style.display='block';
+    }
 
 //schließen
  const closeButtonB = document.getElementById('closeBModal') as HTMLElement;
  closeButtonB.addEventListener('click', closeBrownieModal);
 
- function closeBrownieModal(){
-  const modalBrownie=document.getElementById('bRezeptBox') as HTMLElement;
-  modalBrownie.style.display='none';
- }
+    function closeBrownieModal(){
+      const modalBrownie=document.getElementById('bRezeptBox') as HTMLElement;
+      modalBrownie.style.display='none';
+    }
+
+ //Schritte
+ const schritteBrownie = document.getElementById('nextBrownie') as HTMLElement;
+ schritteBrownie.addEventListener('click', showNextStep);
+
+    function showNextStep(){
+      
+    }
+
+
 
 
 //russischer Zupfkuchen Modal 
@@ -38,7 +48,11 @@ function closeRzModal(){
 }
 
 
-//Erdbeerkuchen Modal öffnen
+
+
+
+//Erdbeerkuchen Modal
+//öffnen
 const erdbeerkuchenButton = document.getElementById('ekButton') as HTMLElement;
 erdbeerkuchenButton.addEventListener('click', openErdbeerkuchenBox);
 

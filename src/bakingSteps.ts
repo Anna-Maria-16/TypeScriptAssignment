@@ -1,6 +1,6 @@
 //einzelne Backschritte BROWNIE in einer Variablen speichern
-export const bZutatenAnfang:string = `<p id="zutaten">Du brauchst dafür:</p>
-                          <ul id="zutatenB">
+export const bZutatenAnfang:string = `<p class="duBrauchst">Du brauchst dafür:</p>
+                          <ul class="zutaten">
                             <li>6 Eier (Gr. M)</li>
                             <li>120g weißer Zucker</li>
                             <li>120g brauner Zucker</li>
@@ -45,8 +45,8 @@ export const bSchritt4:string = `<ul class="zutatenListe">
 export const bSchritt5:string = `<p>Den Brownieteig in die vorbereitete Form füllen und glattstreichen. Restliche gehackte Schokolade darüber verteilen.<br>Die Brownies ca. 20-25 Minuten backen – die Backzeit hängt von eurem Ofen ab. Nicht zu lange im Ofen lassen! Der Teig sollte noch etwas weich sein, aber natürlich im Inneren nicht mehr hin- und her wackeln. (Die Brownies werden beim Abkühlen noch etwas fester)</p>`;
 
 //einzelne Backschritte RUSSICHER ZUPFKUCHEN in einer Variablen speichern
-export const rzZutatenAnfang: string = `<p id="zutaten">Du brauchst dafür:</p>
-                                <ul id="zutatenRZ">
+export const rzZutatenAnfang: string = `<p class="duBrauchst">Du brauchst dafür:</p>
+                                <ul class="zutaten">
                                   <li>300 g Weizenmehl</li>
                                   <li>4 EL Backkakao</li>
                                   <li>150 g Zucker</li>
@@ -97,8 +97,8 @@ export const rzSchritt4:string = `<p>Kuchen im vorgeheizten Ofen circa 60 Min. b
 
 
 //einzelne Backschritte ERDBEERKUCHEN in einer Variablen speichern
-export const ekZutatenAnfang: string = `<p id="zutaten">Du brauchst für den Boden:</p>
-                                <ul id="zutatenEK">
+export const ekZutatenAnfang: string = `<p class="duBrauchst">Du brauchst dafür:</p>
+                                <ul class="zutaten">
                                   <li>250 g Zucker</li>
                                   <li>1 Pck. Vanillezucker</li>
                                   <li>4 Eier</li>      
@@ -107,7 +107,6 @@ export const ekZutatenAnfang: string = `<p id="zutaten">Du brauchst für den Bod
                                   <li>250 g Mehl</li>
                                   <li>3 TL, gehäuft Backpulver</li>
                                 <br>
-                                <p id="zutaten2">Du brauchst für den Belag:</p>
                                   <li>600 ml Sahne</li>
                                   <li>400 ml Schmand</li>
                                   <li>2 Pck. Vanillezucker</li>

@@ -1,4 +1,4 @@
-export let  backschritte = document.getElementById('backschritte') as HTMLDivElement;
+export let  backschritteB = document.getElementById('backschritteB') as HTMLDivElement;
 export let  backschritteRZ = document.getElementById('backschritteRZ') as HTMLDivElement;
 export let  backschritteEK = document.getElementById('backschritteEK') as HTMLDivElement;
 
@@ -11,11 +11,11 @@ export const brownieButton=document.getElementById('bButton') as HTMLElement;
 export const zupfkuchenButton = document.getElementById('rzButton') as HTMLElement;
 export const erdbeerkuchenButton = document.getElementById('ekButton') as HTMLElement;
 
-export const schritt1 = document.getElementById('b1') as HTMLElement;
-export const schritt2 = document.getElementById('b2') as HTMLElement;
-export const schritt3 = document.getElementById('b3') as HTMLElement;
-export const schritt4 = document.getElementById('b4') as HTMLElement;
-export const schritt5 = document.getElementById('b5') as HTMLElement;
+export const schritt1B = document.getElementById('b1') as HTMLElement;
+export const schritt2B = document.getElementById('b2') as HTMLElement;
+export const schritt3B = document.getElementById('b3') as HTMLElement;
+export const schritt4B = document.getElementById('b4') as HTMLElement;
+export const schritt5B = document.getElementById('b5') as HTMLElement;
 
 export const schritt1RZ = document.getElementById('rz1') as HTMLElement;
 export const schritt2RZ = document.getElementById('rz2') as HTMLElement;

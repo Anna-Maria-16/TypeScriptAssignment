@@ -2,6 +2,11 @@ export let  backschritte = document.getElementById('backschritte') as HTMLDivEle
 export let  backschritteRZ = document.getElementById('backschritteRZ') as HTMLDivElement;
 export let  backschritteEK = document.getElementById('backschritteEK') as HTMLDivElement;
 
+export const modalBrownie=document.getElementById('bRezeptBox') as HTMLElement;
+export const modalZupfkuchen = document.getElementById('RzRezeptBox') as HTMLElement;
+export const modalErdbeerkuchen = document.getElementById('EkRezeptBox') as HTMLElement;
+
+
 export const brownieButton=document.getElementById('bButton') as HTMLElement;
 export const zupfkuchenButton = document.getElementById('rzButton') as HTMLElement;
 export const erdbeerkuchenButton = document.getElementById('ekButton') as HTMLElement;

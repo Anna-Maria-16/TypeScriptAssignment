@@ -1,25 +1,28 @@
 import { bZutatenAnfang, bSchritt1, bSchritt2, bSchritt3, bSchritt4, bSchritt5, rzZutatenAnfang, rzSchritt1, rzSchritt2, rzSchritt3, rzSchritt4, ekZutatenAnfang, ekSchritt1, ekSchritt2, ekSchritt3, ekSchritt4, ekSchritt5 } from "./bakingSteps";
-import { brownieButton, backschritte, closeButtonB, schritt1, schritt2, schritt3, schritt4, schritt5, zupfkuchenButton, backschritteRZ, closeButtonRz, schritt1RZ, schritt2RZ, schritt3RZ, schritt4RZ, erdbeerkuchenButton, backschritteEK, closeButtonEk, schritt1EK, schritt2EK, schritt3EK, schritt4EK, schritt5EK } from "./domUtils";
+import { brownieButton, backschritte, closeButtonB, schritt1, schritt2, schritt3, schritt4, schritt5, zupfkuchenButton, backschritteRZ, closeButtonRz, schritt1RZ, schritt2RZ, schritt3RZ, schritt4RZ, erdbeerkuchenButton, backschritteEK, closeButtonEk, schritt1EK, schritt2EK, schritt3EK, schritt4EK, schritt5EK, modalBrownie, modalErdbeerkuchen, modalZupfkuchen } from "./domUtils";
 
 //Brownie Modal 
 //öffnen
 
 brownieButton.addEventListener('click', openBrownieBox);
+closeButtonB.addEventListener('click', closeBrownieModal);
+
+zupfkuchenButton.addEventListener('click', openZupfkuchenBox);
+closeButtonRz.addEventListener('click', closeRzModal);
+
+erdbeerkuchenButton.addEventListener('click', openErdbeerkuchenBox);
+closeButtonEk.addEventListener('click', closeEkModal);
+
   
-    function openBrownieBox(){
-      const modalBrownie=document.getElementById('bRezeptBox') as HTMLElement;
-      modalBrownie.style.display='block';
-
-        backschritte.innerHTML= bZutatenAnfang;
-    }
+function openBrownieBox(){
+  modalBrownie.style.display='block';
+  backschritte.innerHTML= bZutatenAnfang;
+}
 
 
- closeButtonB.addEventListener('click', closeBrownieModal);
-
-    function closeBrownieModal(){
-      const modalBrownie=document.getElementById('bRezeptBox') as HTMLElement;
-      modalBrownie.style.display='none';
-    }
+function closeBrownieModal(){
+  modalBrownie.style.display='none';
+}
 
  //Schritte
  
@@ -57,33 +60,28 @@ schritt5.addEventListener('click', showFifthStep);
     backschritte.innerHTML=bSchritt5;
   } 
 
+
+
 //russischer Zupfkuchen Modal 
 //öffnen
 
-zupfkuchenButton.addEventListener('click', openZupfkuchenBox);
-
 function openZupfkuchenBox(){
-  const modalZupfkuchen = document.getElementById('RzRezeptBox') as HTMLElement;
   modalZupfkuchen.style.display='block';
     backschritteRZ.innerHTML= rzZutatenAnfang;
 }
 
 //schließen
-
-closeButtonRz.addEventListener('click', closeRzModal);
-
 function closeRzModal(){
- const modalRz=document.getElementById('RzRezeptBox') as HTMLElement;
- modalRz.style.display='none';
+  modalZupfkuchen.style.display='none';
 }
 
 //Schritte
 
- schritt1RZ.addEventListener('click', showFirstStepRZ);
-    function showFirstStepRZ(){
-      schritt1RZ.style.backgroundColor = "green";
-      backschritteRZ.innerHTML=rzSchritt1;
-    } 
+schritt1RZ.addEventListener('click', showFirstStepRZ);
+  function showFirstStepRZ(){
+    schritt1RZ.style.backgroundColor = "green";
+    backschritteRZ.innerHTML=rzSchritt1;
+  } 
 
 
 schritt2RZ.addEventListener('click', showSecondStepRZ);
@@ -113,31 +111,23 @@ schritt4RZ.addEventListener('click', showFourthStepRZ);
 //Erdbeerkuchen Modal
 //öffnen
 
-erdbeerkuchenButton.addEventListener('click', openErdbeerkuchenBox);
-
 function openErdbeerkuchenBox(){
-  const modalErdbeerkuchen = document.getElementById('EkRezeptBox') as HTMLElement;
   modalErdbeerkuchen.style.display='block';
-
   backschritteEK.innerHTML= ekZutatenAnfang;
 }
 
 //schließen
-
-closeButtonEk.addEventListener('click', closeEkModal);
-
 function closeEkModal(){
- const modalEk=document.getElementById('EkRezeptBox') as HTMLElement;
- modalEk.style.display='none';
+ modalErdbeerkuchen.style.display='none';
 }
 
 //Schritte
 
- schritt1EK.addEventListener('click', showFirstStepEK);
-    function showFirstStepEK(){
-      schritt1EK.style.backgroundColor = "green";
-      backschritteEK.innerHTML=ekSchritt1;
-    } 
+schritt1EK.addEventListener('click', showFirstStepEK);
+  function showFirstStepEK(){
+    schritt1EK.style.backgroundColor = "green";
+    backschritteEK.innerHTML=ekSchritt1;
+  } 
 
 
 schritt2EK.addEventListener('click', showSecondStepEK);

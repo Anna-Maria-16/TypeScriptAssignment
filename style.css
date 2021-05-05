@@ -162,6 +162,9 @@ background: #dac8c8;
     font-size: 18px;
 }
 
+
+
+
 /*Rezept-Container*/
 
  /* The Modal (background) */
@@ -196,29 +199,50 @@ background: #dac8c8;
     height: 82%;
   }
 
+  .RezeptContent h2{
+	margin-top: 1%;
+  }
+
+  .RezeptContent button{
+	  background-color: #dac8c8;
+	  border-radius: 4px;
+	  border-style: none;
+	  height: 22px;
+	  width: 22px;
+	  color: white;
+	  cursor: pointer;
+	  margin: 1%;
+	  margin-top: 0%;
+  }
+
+  .stepButtons{
+	  text-align: center;
+  }
+
+
   #zutaten{
 	  margin-left: 100px;
 	  margin-top: 0px;
 	  padding-top: 0px;
   }
 
-  #zutaten-2{
+  #zutaten2{
 	margin-top: 0px;
 	margin-left: -170px;
 	padding-left: 0px;
   }
   
-  #Zutaten-B{
+  #zutatenB{
 	position:center;
 	padding-left: 270px;
  }
  
- #Zutaten-RZ{
+ #zutatenRZ{
 	position:center;
 	padding-left: 270px;
  }
 
- #Zutaten-EK{
+ #zutatenEK{
 	position:center;
 	padding-left: 270px;
  }
@@ -249,7 +273,7 @@ background: #dac8c8;
   /* The Close Button */
   .close {
     cursor: pointer;
-	color:rgb(185, 181, 181);
+	color:#dac8c8;
 	float: right;
     margin-left: 0;
     padding-left: 0;
@@ -258,13 +282,6 @@ background: #dac8c8;
 	font-weight: 850;
   }
   
-  .close:hover, .close:focus {
-	color: rgba(161, 133, 133, 0.8);
-    margin-top: 25x;
- 	text-decoration: none;
-	cursor: pointer;
-  }
-
 
   /*weiter&zurück buttons*/
   .weiter, .zurueck{
@@ -274,7 +291,7 @@ background: #dac8c8;
     width: auto;
     padding: 18px;
     margin-top: -50px;
-    color: rgb(185, 181, 181);
+    color: #dac8c8;
     font-weight: 500;
     font-size: 35px;
     transition: 0.6s ease;
@@ -297,7 +314,7 @@ background: #dac8c8;
   /* button färbt sich bei hovern */
 .zurueck:hover,
 .weiter:hover {
-  background-color: rgba(161, 133, 133, 0.8);
+  background-color: #dac8c8;
   color: #fefefe;
 }
 

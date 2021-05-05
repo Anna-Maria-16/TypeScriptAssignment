@@ -22,14 +22,14 @@ background: #dac8c8;
 
 /*Flip-Karte-Brownies*/
 
- .flip-karte-brownies {
+ .flipKarteBrownies {
 	background-color: transparent;
 	width: 300px;
 	height: 300px;
 	perspective: 1000px;
   }
 
-  .flip-karte-b {
+  .flipKarteB {
 	position: relative;
 	width: 300px;
 	height: 300px;
@@ -43,18 +43,18 @@ background: #dac8c8;
 	height:300px
  }
 
-  .flip-karte-brownies:hover .flip-karte-b{
+  .flipKarteBrownies:hover .flipKarteB{
 	transform: rotateY(-180deg);
   }
 
-  .flip-karte-vorderseite-b, .flip-karte-rückseite-b {
+  .flipKarteVorderseiteB, .flipKarteRueckseiteB {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	backface-visibility: hidden;
   }
 
-  .flip-karte-rückseite-b {
+  .flipKarteRueckseiteB {
 	background-color: #eee;
 	color: black;
 	text-align: center;
@@ -65,14 +65,14 @@ background: #dac8c8;
 
 /*Flip-Karte-Russischer Zupfkuchen*/
 
-.flip-karte-russischer-zupfkuchen {
+.flipKarteRussischerZupfkuchen {
 	background-color: transparent;
 	width: 300px;
 	height: 300px;
 	perspective: 1000px;
   }
 
-  .flip-karte-rz {
+  .flipKarteRz {
 	position: relative;
 	width: 300px;
 	height: 300px;
@@ -82,18 +82,18 @@ background: #dac8c8;
   }
 
 
-  .flip-karte-russischer-zupfkuchen:hover .flip-karte-rz{
+  .flipKarteRussischerZupfkuchen:hover .flipKarteRz{
 	transform: rotateY(-180deg);
   }
 
-  .flip-karte-vorderseite-rz, .flip-karte-rückseite-rz {
+  .flipKarteVorderseiteRz, .flipKarteRueckseiteRz {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	backface-visibility: hidden;
   }
 
-  .flip-karte-rückseite-rz {
+  .flipKarteRueckseiteRz {
 	background-color: #eee;
 	color: black;
 	text-align: center;
@@ -107,14 +107,14 @@ background: #dac8c8;
 
   /*Flip-Karte-Erdbeerkuchen*/
 
-.flip-karte-erdbeerkuchen {
+.flipKarteErdbeerkuchen {
 	background-color: transparent;
 	width: 300px;
 	height: 300px;
 	perspective: 1000px;
   }
 
-  .flip-karte-ek {
+  .flipKarteEk {
 	position: relative;
 	width: 300px;
 	height: 300px;
@@ -124,18 +124,18 @@ background: #dac8c8;
   }
 
 
-  .flip-karte-erdbeerkuchen:hover .flip-karte-ek{
+  .flipKarteErdbeerkuchen:hover .flipKarteEk{
 	transform: rotateY(-180deg);
   }
 
-  .flip-karte-vorderseite-ek, .flip-karte-rückseite-ek {
+  .flipKarteVorderseiteEk, .flipKarteRueckseiteEk {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	backface-visibility: hidden;
   }
 
-  .flip-karte-rückseite-ek {
+  .flipKarteRueckseiteEk {
 	background-color: #eee;
 	color: black;
 	text-align: center;
@@ -144,7 +144,7 @@ background: #dac8c8;
   }
 
 /*Flip-Karten positionieren*/
-.flip-karten{
+.flipKarten{
 	display: flex;
 	margin-top: 100px;
 	justify-content: space-around;

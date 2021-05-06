@@ -1,3 +1,5 @@
+import { bSchritt1 } from "./bakingSteps";
+
 export const modalBrownie=document.getElementById('bRezeptBox') as HTMLElement;
 export const modalZupfkuchen = document.getElementById('RzRezeptBox') as HTMLElement;
 export const modalErdbeerkuchen = document.getElementById('EkRezeptBox') as HTMLElement;
@@ -30,6 +32,8 @@ export const schritt2EK = document.getElementById('ek2') as HTMLElement;
 export const schritt3EK = document.getElementById('ek3') as HTMLElement;
 export const schritt4EK = document.getElementById('ek4') as HTMLElement;
 export const schritt5EK = document.getElementById('ek5') as HTMLElement;
+
+/*export const zutatenLi = Element.getElementById('z1B') as HTMLElement;*/
 
 
 

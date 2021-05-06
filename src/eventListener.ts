@@ -1,5 +1,5 @@
-import { brownieButton, closeButtonB, zupfkuchenButton, closeButtonRz, erdbeerkuchenButton, closeButtonEk, schritt1B, schritt2B, schritt3B, schritt4B, schritt5B, schritt1RZ, schritt2RZ, schritt3RZ, schritt4RZ, schritt1EK, schritt2EK, schritt3EK, schritt4EK, schritt5EK } from "./domUtils";
-import { openBrownieModal as openBModal, closeBModal, openZupfkuchenModal as openRzModal, closeRzModal, openErdbeerkuchenModal as openEkModal, closeEkModal, showFirstStep, showSecondStep, showThirdStep, showFourthStep, showFifthStep, showFirstStepRZ, showSecondStepRZ, showThirdStepRZ, showFourthStepRZ, showFirstStepEK, showSecondStepEK, showThirdStepEK, showFourthStepEK, showFifthStepEK } from "./index";
+import { brownieButton, closeButtonB, zupfkuchenButton, closeButtonRz, erdbeerkuchenButton, closeButtonEk, schritt1B, schritt2B, schritt3B, schritt4B, schritt5B, schritt1RZ, schritt2RZ, schritt3RZ, schritt4RZ, schritt1EK, schritt2EK, schritt3EK, schritt4EK, schritt5EK} from "./domUtils";
+import { openBrownieModal as openBModal, closeBModal, openZupfkuchenModal as openRzModal, closeRzModal, openErdbeerkuchenModal as openEkModal, closeEkModal, showFirstStep, showSecondStep, showThirdStep, showFourthStep, showFifthStep, showFirstStepRZ, showSecondStepRZ, showThirdStepRZ, showFourthStepRZ, showFirstStepEK, showSecondStepEK, showThirdStepEK, showFourthStepEK, showFifthStepEK} from "./index";
 
 
 export function addEventListeners(){
@@ -32,4 +32,8 @@ schritt3EK.addEventListener('click', showThirdStepEK);
 schritt4EK.addEventListener('click', showFourthStepEK);
 schritt5EK.addEventListener('click', showFifthStepEK);
 
+//Zutaten durchstreichen
+/*zutatenLi.addEventListener('mouseover', check);*/
 }
+
+

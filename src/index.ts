@@ -1,5 +1,5 @@
 import { bZutatenAnfang, bSchritt1, bSchritt2, bSchritt3, bSchritt4, bSchritt5, rzZutatenAnfang, rzSchritt1, rzSchritt2, rzSchritt3, rzSchritt4, ekZutatenAnfang, ekSchritt1, ekSchritt2, ekSchritt3, ekSchritt4, ekSchritt5 } from "./bakingSteps";
-import { brownieButton, backschritteB, closeButtonB, schritt1B, schritt2B, schritt3B, schritt4B, schritt5B, zupfkuchenButton, backschritteRZ, closeButtonRz, schritt1RZ, schritt2RZ, schritt3RZ, schritt4RZ, erdbeerkuchenButton, backschritteEK, closeButtonEk, schritt1EK, schritt2EK, schritt3EK, schritt4EK, schritt5EK, modalBrownie, modalErdbeerkuchen, modalZupfkuchen } from "./domUtils";
+import { brownieButton, backschritteB, closeButtonB, schritt1B, schritt2B, schritt3B, schritt4B, schritt5B, zupfkuchenButton, backschritteRZ, closeButtonRz, schritt1RZ, schritt2RZ, schritt3RZ, schritt4RZ, erdbeerkuchenButton, backschritteEK, closeButtonEk, schritt1EK, schritt2EK, schritt3EK, schritt4EK, schritt5EK, modalBrownie, modalErdbeerkuchen, modalZupfkuchen} from "./domUtils";
 import { addEventListeners } from "./eventListener";
 
 
@@ -26,7 +26,7 @@ export function steps(schrittZahl:HTMLElement, element:HTMLDivElement, schritt:s
 
 //Brownie Modal öffnen/schließen
 export function openBrownieModal(){
-  open(modalBrownie, backschritteB, bZutatenAnfang);
+  open(modalBrownie, backschritteB, bZutatenAnfang);  
 }
 
 export function closeBModal(){
@@ -113,3 +113,11 @@ export function closeEkModal(){
   export function showFifthStepEK(){
     steps(schritt5EK,backschritteEK, ekSchritt5);
   }
+
+
+  
+
+  /*export function check(){
+    /*zutatenLi.style.textDecoration = "line-through";
+    backschritteB.querySelector<HTMLInputElement>('#z1B')!.style.textDecoration="line-through";
+  }*/
